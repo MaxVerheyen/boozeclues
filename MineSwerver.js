@@ -2,7 +2,7 @@
 //server specific settings
 const PROTOCOL = "http://"
 const HOST = "localhost"
-const PORT = 5000;
+const PORT = 8081;
 const SERVERNAME = "MineSwerver"
 const VERSIONNAME = "0.15"
 /* Libraries 'verkrijgen' */
@@ -148,10 +148,10 @@ app.get('/liveGamesRefresh/', function (req, res) {
     //en  samengevoegd met data
      res.status(200).send(JSON.stringify(viewData));  
 });
-/*
+
 // Listen on port
 var server = app.listen(PORT, function() {
 	var host = server.address().address;
 	var port = server.address().port;
 	console.log("App listening at http://%s:%s", host, port);
-});*/
+});
